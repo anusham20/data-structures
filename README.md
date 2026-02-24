@@ -1,95 +1,147 @@
-# Data Structures in Python
+# 📚 Data Structures in Python
 
-This repository contains clean, interview-ready implementations of fundamental data structures.
+A clean, interview-ready implementation of fundamental data structures built from scratch.
 
----
-
-# Implemented Structures
-
-- Stack (LIFO)
-- Queue (FIFO)
-- Singly Linked List
-- Binary Search Tree (BST)
+This repository focuses on:
+- Core data structure understanding
+- Time complexity awareness
+- Clean code design
+- Edge case handling
+- Simple test coverage
 
 ---
 
-# Concepts Explained
+# 🧱 Implemented Data Structures
 
-## Stack
+## 🥞 Stack (LIFO)
 Last-In-First-Out structure.
-Operations:
-- push → O(1)
-- pop → O(1)
-- peek → O(1)
 
-Used in:
-- Function calls
-- Expression evaluation
-- Backtracking
+Operations:
+- `push()` → O(1)
+- `pop()` → O(1)
+- `peek()` → O(1)
+
+Common Use Cases:
+- Function call stack
+- Undo/redo systems
+- Expression parsing
+- Backtracking algorithms
 
 ---
 
-## Queue
+## 🚶 Queue (FIFO)
 First-In-First-Out structure.
-Operations:
-- enqueue → O(1)
-- dequeue → O(n) (list-based implementation)
 
-Used in:
+Operations:
+- `enqueue()` → O(1)
+- `dequeue()` → O(n) (list-based implementation)
+- `front()` → O(1)
+
+Common Use Cases:
 - Scheduling
-- Breadth-first search
+- Breadth-First Search (BFS)
+- Task processing systems
 
 ---
 
-## Linked List
-Nodes connected via pointers.
+## 🔗 Singly Linked List
+
+A dynamic structure where nodes point to the next node.
+
 Operations:
-- insert at head → O(1)
-- search → O(n)
-- delete → O(n)
+- Insert at head → O(1)
+- Search → O(n)
+- Delete → O(n)
 
 Advantages:
 - Dynamic size
 - Efficient insertions
+- No memory reallocation required
 
 ---
 
-## Binary Search Tree
-Ordered tree structure.
-Left subtree < node < right subtree.
+## 🌳 Binary Search Tree (BST)
+
+An ordered binary tree where:
+
+Left subtree < Node < Right subtree
 
 Operations:
-- insert → O(log n) average
-- search → O(log n) average
-- inorder traversal → produces sorted list
+- Insert → O(log n) average
+- Search → O(log n) average
+- Inorder traversal → produces sorted output
 
-Worst case (unbalanced) → O(n)
+Worst-case complexity (unbalanced tree):
+- O(n)
 
 ---
 
-# Running Tests
+# 📊 Time Complexity Summary
 
-cd src  
+| Data Structure | Insert | Search | Delete |
+|---------------|--------|--------|--------|
+| Stack         | O(1)   | O(n)   | O(1)   |
+| Queue         | O(1)   | O(n)   | O(n)   |
+| Linked List   | O(1)*  | O(n)   | O(n)   |
+| BST (average) | O(log n) | O(log n) | O(log n) |
+| BST (worst)   | O(n)   | O(n)   | O(n)   |
+
+\*Linked list insert shown is insert at head.
+
+---
+
+# 🧪 Running Tests
+
+Navigate to the `src` directory:
+
+cd src
 python test_data_structures.py
 
-If all tests pass, you will see:
+If successful, you should see:
 
 ✓ Stack test passed  
 ✓ Queue test passed  
 ✓ Linked List test passed  
 ✓ BST test passed  
 
----
-
-# Future Improvements
-
-- Use collections.deque for O(1) queue dequeue
-- Add balanced BST (AVL or Red-Black)
-- Add Heap
-- Add Graph
-- Convert to pytest
-- Add performance benchmarking
+Edge cases are also tested (empty structures).
 
 ---
 
-Author: Anusha Maheshwari
+# 🎯 Demo
+
+To see example usage:
+
+cd src  
+python demo.py  
+
+---
+
+# 🧠 Design Philosophy
+
+This repository emphasizes:
+
+- Clear implementation over shortcuts
+- Explicit complexity awareness
+- Readable, maintainable structure
+- Interview-focused fundamentals
+
+All data structures are implemented manually without external libraries.
+
+---
+
+# 🚀 Future Improvements
+
+- Replace queue with `collections.deque` for O(1) dequeue
+- Add AVL Tree
+- Add Red-Black Tree
+- Add Heap / Priority Queue
+- Add Graph (BFS & DFS)
+- Convert test suite to pytest
+- Add benchmarking
+
+---
+
+# 👩‍💻 Author
+
+Anusha Maheshwari  
